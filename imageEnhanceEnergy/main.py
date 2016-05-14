@@ -118,7 +118,7 @@ class EnergyTestPytos(object):
     self.energyProfiler = TaskEnergyProfiler(self.pids,csvFile)
 
   def start(self):
-    self.energyProfiler.start()
+    #self.energyProfiler.start()
     self.pytosTest.start()
 
 

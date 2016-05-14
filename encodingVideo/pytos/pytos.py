@@ -39,8 +39,8 @@ class Offloading:
 
         offload = c.getOffloadingDesicion(methodSignature,methodWeight,argsSize)
         #pdb.set_trace()
-        offload = False
-        #offload = True
+        #offload = False
+        offload = True
         print offload
         if not offload:
             startTime = time.time()
