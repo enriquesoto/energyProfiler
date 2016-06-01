@@ -8,7 +8,6 @@ from rpyc.utils.server import ThreadedServer
 from threading import Thread
 import pytosdb
 import cStringIO
-import cv2
 import numpy as np
 from cStringIO import StringIO
 import os
@@ -16,6 +15,7 @@ from utils import Utils
 import pytosDebug
 import requests
 import Pyro4
+import cv2
 #development
 import pdb
 
@@ -126,6 +126,7 @@ if __name__ == '__main__':
   t = Thread(target = server.start)
   # the main logica
   main.weight = cv2.imread(constants.WEIGHT_FILE)
+
   pytosDaemon = PytosDaemon(main)
   t.daemon = True
   t.start()

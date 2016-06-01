@@ -134,7 +134,7 @@ class TaskDAO:
 class PytosDB:
   conn = None
   def __init__(self):
-    pdb.set_trace()
+    #pdb.set_trace()
     #self.db_filename = 'pytos/stats.db'
     db_exits = os.path.exists(constants.ROOT_DIR+constants.DB_FILENAME)
     with sqlite3.connect(constants.ROOT_DIR+constants.DB_FILENAME) as conn:
